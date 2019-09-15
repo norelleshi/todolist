@@ -39,7 +39,7 @@ li {
     color: #666;
 }
 
-span {
+li span {
     background: #e74c3c;
     height: 40px;
     margin-right: 20px;
@@ -51,8 +51,9 @@ span {
     opacity: 0;
 }
 
-.fa-plus {
+.add-btn {
     float: right;
+	cursor: pointer;
 }
 
 li:nth-child(2n){

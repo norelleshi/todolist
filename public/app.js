@@ -21,6 +21,8 @@ $("input[type='text']").keypress(function(event){
     }
 });
 
-$(".fa-plus").click(function(){
+$(".add-btn").click(function(){
     $("input[type='text']").fadeToggle();
+	// this.textContent = "﹀";
+	this.textContent === "︿" ? this.textContent = "﹀" : this.textContent = "︿";
 });
