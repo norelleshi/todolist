@@ -17,12 +17,11 @@ $("input[type='text']").keypress(function(event){
         var todoText = $(this).val();
         $(this).val("");
         //create a new li and add to ul
-        $("ul").append("<li><span><i class='far fa-trash-alt'></i></span> " + todoText + "</li>");
+        $("ul").append("<li class='tasktext'><span><i class='far fa-trash-alt'></i></span>" + todoText + "</li>");
     }
 });
 
 $(".add-btn").click(function(){
     $("input[type='text']").fadeToggle();
-	// this.textContent = "﹀";
 	this.textContent === "︿" ? this.textContent = "﹀" : this.textContent = "︿";
 });
